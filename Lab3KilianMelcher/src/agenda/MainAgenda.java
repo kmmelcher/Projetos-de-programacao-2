@@ -20,7 +20,7 @@ public class MainAgenda {
         System.out.println("Carregando agenda inicial");
         try {
             /*
-             * Essa é a maneira de lidar com possíveis erros por falta do arquivo.
+             * Essa é a maneira de lidar com possíveis Stringerros por falta do arquivo.
              */
             carregaAgenda("agenda_inicial.csv", agenda);
         } catch (FileNotFoundException e) {
