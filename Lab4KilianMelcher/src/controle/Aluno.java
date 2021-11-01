@@ -66,9 +66,9 @@ public class Aluno {
      * @param curso curso do aluno.
      */
     private void checaAtributoVazio(String nome, String curso) {
-        if (nome.isBlank()) {
+        if (nome.isEmpty()) {
             throw new IllegalArgumentException("Nome vazio");
-        } else if (curso.isBlank()) {
+        } else if (curso.isEmpty()) {
             throw new IllegalArgumentException("Curso vazio");
         }
     }
