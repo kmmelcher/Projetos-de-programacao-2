@@ -1,5 +1,7 @@
 package lab2;
 
+import java.util.Arrays;
+
 /**
  * Representação de uma disciplina, especificamente do curso
  * ciência da computação da UFCG. Toda disciplina possui
@@ -151,21 +153,6 @@ public class Disciplina {
     }
 
     /**
-     * Converte array de notas em uma String no formato
-     * "[Nota1, ..., NotaN]"
-     *
-     * @return representação em String das 4 notas
-     */
-    public String notasToString() {
-        String notasEmTexto = "[";
-        for (int i = 0; i < this.notas.length-1; i++) {
-            notasEmTexto += this.notas[i] + ", ";
-        }
-        notasEmTexto += this.notas[notas.length-1] + "]";
-        return notasEmTexto;
-    }
-
-    /**
      * Retorna nome da disciplina.
      *
      * @return nome da disciplina.
@@ -186,7 +173,7 @@ public class Disciplina {
         infoDisciplina += this.nomeDisciplina + " ";
         infoDisciplina += this.horasDeEstudo + " ";
         infoDisciplina += this.media + " ";
-        infoDisciplina += this.notasToString();
+        infoDisciplina += Arrays.toString(this.notas);
         return infoDisciplina;
     }
 
