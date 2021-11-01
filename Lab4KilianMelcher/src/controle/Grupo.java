@@ -65,7 +65,7 @@ public class Grupo {
      * @param nome nome do grupo.
      */
     private void checaAtributoVazio(String nome) {
-        if (nome.isBlank()) {
+        if (nome.isEmpty()) {
             throw new IllegalArgumentException("Nome vazio");
         }
     }

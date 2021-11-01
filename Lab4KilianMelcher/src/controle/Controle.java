@@ -72,7 +72,7 @@ public class Controle {
      * @return Representação em String do aluno.
      */
     public String exibeAluno(int matricula) {
-        return "Aluno: " + this.alunos.get(matricula).toString();
+        return "Aluno: " + this.alunos.get(matricula);
     }
 
     /**
