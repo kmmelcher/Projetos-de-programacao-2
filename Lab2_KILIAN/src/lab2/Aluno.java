@@ -37,8 +37,8 @@ public class Aluno {
      * registro de finanças e uma saúde.
      */
     public Aluno () {
-        this.disciplinas = new ArrayList<Disciplina>();
-        this.registrosOnline = new ArrayList<RegistroTempoOnline>();
+        this.disciplinas = new ArrayList<>();
+        this.registrosOnline = new ArrayList<>();
         this.registroFinancas = new RegistroFinancas(0);
         this.saude = new Saude();
     }
